@@ -5,16 +5,20 @@
     box-sizing: border-box;
 }
 
+:root{
+    --primary-color: #06283D;
+}
+
 body{
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #06283D;
+    background: var(--primary-color);
 }
 
 svg{
-    width: 12px;
+    width: 20px;
     display: inline;
 }
 
@@ -40,7 +44,7 @@ svg{
 
 .search-box input{
     border: none;
-    color: #06283D;
+    color: var(--primary-color);
     width: 85%;
     font-size: 24px;
     font-weight: 500;
@@ -50,7 +54,7 @@ svg{
 
 .search-box input::placeholder{
     font-size: 20px;
-    color: #06283D;
+    color: var(--primary-color);
     text-transform: capitalize;
 }
 
@@ -59,21 +63,22 @@ svg{
     border: none;
     width: 50px;
     height: 50px;
-    fill: #06283D;
+    fill: var(--primary-color);
     background-color: #dff6ff;
     border-radius: 50%;
     font-size: 22px;
     transition: 0.4s ease;
 }
 
-.search-box button:hover{
+.search-box button:hover,
+.search-box button:focus{
     fill: #fff;
-    background-color: #06283D;
+    background-color: var(--primary-color);
 }
 
 .search-box .loacation-width{
     position: absolute;
-    fill: #06283D;
+    fill: var(--primary-color);
     font-size: 28px;
 }
 
@@ -88,8 +93,8 @@ svg{
 
 .weather-box .temperature{
     position: relative;
-    color: #06283D;
-    fill: #06283D;
+    color: var(--primary-color);
+    fill: var(--primary-color);
     font-size: 4rem;
     font-weight: 800;
     margin-top: 20px;
@@ -103,7 +108,7 @@ svg{
 }
 
 .weather-box .description{
-    color: #06283D;
+    color: var(--primary-color);
     font-size: 22px;
     font-weight: 500;
     text-transform: capitalize;
@@ -134,20 +139,20 @@ svg{
 }
 
 .weather-details svg{
-    fill: #06283D;
+    fill: var(--primary-color);
     font-size: 26px;
     margin-right: 10px;
     margin-top: 6px;
 }
 
 .weather-details span{
-    color: #06283D;
+    color: var(--primary-color);
     font-size: 22px;
     font-weight: 500;
 }
 
 .weather-details p{
-    color: #06283D;
+    color: var(--primary-color);
     font-size: 14px;
     font-weight: 500;
 }
@@ -166,7 +171,7 @@ svg{
 }
 
 .not-found p{
-    color: #06283D;
+    color: var(--primary-color);
     font-size: 22px;
     font-weight: 500;
     margin-top: 12px;
@@ -177,7 +182,7 @@ svg{
     opacity: 0;
 }
 
-.fade-in{
+.fadeIn{
     animation: 0.5s fadeIn forwards;
     animation-delay: 0.5s;
 }
