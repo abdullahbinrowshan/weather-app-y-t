@@ -65,7 +65,13 @@ const displayTemperature = (data) => {
             image.src = 'images/cloud.png'
             break;
         case 'Haze':
+            image.src = 'images/haze.png'
+            break;
+        case 'Snow':
             image.src = 'images/snow.png'
+            break;
+        case 'Mist':
+            image.src = 'images/mist.png'
             break;
 
         default:
